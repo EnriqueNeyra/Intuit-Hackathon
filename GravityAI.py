@@ -6,9 +6,9 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 # Configurations
 DATA_FILE = "data.txt"  # Change this to your text file
-NEO4J_URI = "bolt://localhost:7687"  # Change if using cloud
+NEO4J_URI = "neo4j+s://ce8a4d76.databases.neo4j.io"  # Change if using cloud
 NEO4J_USER = "neo4j"
-NEO4J_PASSWORD = "password"
+NEO4J_PASSWORD = "G8_ygSDrSoTDebg3iFKiUpMtbcd_hixaA335eGdwzMI"
 
 LLAMA3_API_KEY = "your-api-key"
 LLAMA3_API_URL = "https://gravityai-hosted-llama3-endpoint"
