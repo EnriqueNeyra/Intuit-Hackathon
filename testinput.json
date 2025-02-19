@@ -1,0 +1,15 @@
+{
+  "dialog": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant."
+    },
+    {
+      "role": "user",
+      "content": "Please explain what computer science is."
+    }
+   ],
+  "max_gen_len": null,
+  "temperature": 0.7,
+  "top_p": 0.9
+}
