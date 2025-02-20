@@ -1,0 +1,53 @@
+A meteoroid (/ˈmiːtiərɔɪd/ MEE-tee-ə-royd) is a small rocky or metallic body in outer space.
+Meteoroids are distinguished as objects significantly smaller than asteroids, ranging in size from grains to objects up to 1 m (3 ft 3 in) wide. Objects smaller than meteoroids are classified as micrometeoroids or space dust. Many are fragments from comets or asteroids, whereas others are collision impact debris ejected from bodies such as the Moon or Mars.
+
+
+The visible passage of a meteoroid, comet, or asteroid entering Earth's atmosphere is called a meteor, and a series of many meteors appearing seconds or minutes apart and appearing to originate from the same fixed point in the sky is called a meteor shower.
+
+
+An estimated 25 million meteoroids, micrometeoroids and other space debris enter Earth's atmosphere each day, which results in an estimated 15,000 tonnes of that material entering the atmosphere each year.
+A meteorite is the remains of a meteoroid that has survived the ablation of its surface material during its passage through the atmosphere as a meteor and has impacted the ground.
+
+
+Meteoroids
+
+In 1961, the International Astronomical Union (IAU) defined a meteoroid as "a solid object moving in interplanetary space, of a size considerably smaller than an asteroid and considerably larger than an atom". In 1995, Beech and Steel, writing in the Quarterly Journal of the Royal Astronomical Society, proposed a new definition where a meteoroid would be between 100 μm and 10 m (33 ft) across. In 2010, following the discovery of asteroids below 10 m in size, Rubin and Grossman proposed a revision of the previous definition of meteoroid to objects between 10 μm (0.00039 in) and one meter (3 ft 3 in) in diameter in order to maintain the distinction. According to Rubin and Grossman, the minimum size of an asteroid is given by what can be discovered from Earth-bound telescopes, so the distinction between meteoroid and asteroid is fuzzy. Some of the smallest asteroids discovered (based on absolute magnitude H) are 2008 TS26 with H = 33.2 and 2011 CQ1 with H = 32.1 both with an estimated size of one m (3 ft 3 in). In April 2017, the IAU adopted an official revision of its definition, limiting size to between 30 μm (0.0012 in) and one meter in diameter, but allowing for a deviation for any object causing a meteor.
+
+
+Objects smaller than meteoroids are classified as micrometeoroids and interplanetary dust. The Minor Planet Center does not use the term "meteoroid".
+
+
+Composition
+
+Almost all meteoroids contain extraterrestrial nickel and iron. They have three main classifications: iron, stone, and stony-iron. Some stone meteoroids contain grain-like inclusions known as chondrules and are called chondrites. Stony meteoroids without these features are called "achondrites", which are typically formed from extraterrestrial igneous activity; they contain little or no extraterrestrial iron. The composition of meteoroids can be inferred as they pass through Earth's atmosphere from their trajectories and the light spectra of the resulting meteor. Their effects on radio signals also give information, especially useful for daytime meteors, which are otherwise very difficult to observe. From these trajectory measurements, meteoroids have been found to have many different orbits, some clustering in streams (see meteor showers) often associated with a parent comet, others apparently sporadic. Debris from meteoroid streams may eventually be scattered into other orbits. The light spectra, combined with trajectory and light curve measurements, have yielded various compositions and densities, ranging from fragile snowball-like objects with density about a quarter that of ice, to nickel-iron rich dense rocks. The study of meteorites also gives insights into the composition of non-ephemeral meteoroids.
+
+
+In the Solar System
+
+Most meteoroids come from the asteroid belt, having been perturbed by the gravitational influences of planets, but others are particles from comets, giving rise to meteor showers. Some meteoroids are fragments from bodies such as Mars or the Moon, that have been thrown into space by an impact.
+
+
+Meteoroids travel around the Sun in a variety of orbits and at various velocities. The fastest move at about 42 km/s (94,000 mph) through space in the vicinity of Earth's orbit. This is escape velocity from the Sun, equal to the square root of two times Earth's speed, and is the upper speed limit of objects in the vicinity of Earth, unless they come from interstellar space. Earth travels at about 29.6 km/s (66,000 mph), so when meteoroids meet the atmosphere head-on (which only occurs when meteors are in a retrograde orbit such as the Leonids, which are associated with the retrograde comet 55P/Tempel–Tuttle) the combined speed may reach about 71 km/s (160,000 mph) (see Specific energy#Astrodynamics). Meteoroids moving through Earth's orbital space average about 20 km/s (45,000 mph), but due to Earth's gravity meteors such as the Phoenicids can make atmospheric entry at as slow as about 11 km/s.
+
+
+On January 17, 2013, at 05:21 PST, a one-meter-sized comet from the Oort cloud entered Earth atmosphere over California and Nevada. The object had a retrograde orbit with perihelion at 0.98 ± 0.03 AU. It approached from the direction of the constellation Virgo (which was in the south about 50° above the horizon at the time), and collided head-on with Earth's atmosphere at 72 ± 6 km/s (161,000 ± 13,000 mph) vaporising more than 100 km (330,000 ft) above ground over a period of several seconds.
+
+
+Collision with Earth's atmosphere
+
+When meteoroids intersect with Earth's atmosphere at night, they are likely to become visible as meteors. If meteoroids survive the entry through the atmosphere and reach Earth's surface, they are called meteorites. Meteorites are transformed in structure and chemistry by the heat of entry and force of impact. A noted 4-metre (13 ft) asteroid, 2008 TC3, was observed in space on a collision course with Earth on 6 October 2008 and entered Earth's atmosphere the next day, striking a remote area of northern Sudan. It was the first time that a meteoroid had been observed in space and tracked prior to impacting Earth. NASA has produced a map showing the most notable asteroid collisions with Earth and its atmosphere from 1994 to 2013 from data gathered by U.S. government sensors.
+
+
+Meteorites
+
+A meteorite is a portion of a meteoroid or asteroid that survives its passage through the atmosphere and hits the ground without being destroyed. Meteorites are sometimes, but not always, found in association with hypervelocity impact craters; during energetic collisions, the entire impactor may be vaporized, leaving no meteorites. Geologists use the term, "bolide", in a different sense from astronomers to indicate a very large impactor. For example, the USGS uses the term to mean a generic large crater-forming projectile in a manner "to imply that we do not know the precise nature of the impacting body ... whether it is a rocky or metallic asteroid, or an icy comet for example".
+
+
+Meteoroids also hit other bodies in the Solar System. On such stony bodies as the Moon or Mars that have little or no atmosphere, they leave enduring craters.
+
+
+Impact craters
+
+Meteoroid collisions with solid Solar System objects, including the Moon, Mercury, Callisto, Ganymede, and most small moons and asteroids, create impact craters, which are the dominant geographic features of many of those objects. On other planets and moons with active surface geological processes, such as Earth, Venus, Mars, Europa, Io, and Titan, visible impact craters may become eroded, buried, or transformed by tectonics over time. In early literature, before the significance of impact cratering was widely recognised, the terms cryptoexplosion or cryptovolcanic structure were often used to describe what are now recognised as impact-related features on Earth. Molten terrestrial material ejected from a meteorite impact crater can cool and solidify into an object known as a tektite. These are often mistaken for meteorites. Terrestrial rock, sometimes with pieces of the original meteorite, created or modified by an impact of a meteorite is called impactite.
+
+
