@@ -6,29 +6,24 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 import HostedAPI
 
 # Configurations
-DATA_FILE = "data.txt"  # Change this to your text file
-NEO4J_URI = "neo4j+s://ce8a4d76.databases.neo4j.io"  # Change if using cloud
+DATA_FILE = "solar_system.txt"  # Change this to your text file
+NEO4J_URI = "neo4j+ssc://ce8a4d76.databases.neo4j.io"  # Change if using cloud
 NEO4J_USER = "neo4j"
 NEO4J_PASSWORD = "G8_ygSDrSoTDebg3iFKiUpMtbcd_hixaA335eGdwzMI"
+embed_model = SentenceTransformer("all-MiniLM-L6-v2")
+driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
 
 # ------------------------   RAG Implementation -----------------
 
-# Step 1: Load & Split Text
-with open(DATA_FILE, "r", encoding="utf-8") as f:
-    raw_text = f.read()
-
-text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
-chunks = text_splitter.split_text(raw_text)
-
-# Step 2: Convert Text to Embeddings
-embed_model = SentenceTransformer("all-MiniLM-L6-v2")
-embeddings = embed_model.encode(chunks).tolist()  # Convert to list for Neo4J
-
-# Step 3: Store Embeddings in Neo4J
-driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
-
-
 def store_embeddings():
+    # Load & Split Text
+    with open(DATA_FILE, "r", encoding="utf-8") as f:
+        raw_text = f.read()
+
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
+    chunks = text_splitter.split_text(raw_text)
+    embeddings = embed_model.encode(chunks).tolist()  # Convert to list for Neo4J
+
     with driver.session() as session:
         session.run("MATCH (n:Chunk) DETACH DELETE n")  # Clear old data
         for i, (chunk, embedding) in enumerate(zip(chunks, embeddings)):
@@ -36,9 +31,6 @@ def store_embeddings():
                 "CREATE (c:Chunk {id: $id, text: $text, embedding: $embedding})",
                 id=i, text=chunk, embedding=embedding
             )
-
-
-store_embeddings()
 
 
 # Step 4: Retrieve Most Relevant Chunks
@@ -78,12 +70,14 @@ def query_llama3(question):
     file.write(prompt)
     file.close()
 
-    response = HostedAPI.postJob(file)
+    response = HostedAPI.postJob('prompt.txt')
     return response.json().get("text", "Error retrieving response")
 
 
 # Step 6: Run a Query
 if __name__ == "__main__":
+    # Step 1: Load & Split Text
+    store_embeddings()
     question = input("Ask a question: ")
     answer = query_llama3(question)
     print("\nAnswer:", answer)

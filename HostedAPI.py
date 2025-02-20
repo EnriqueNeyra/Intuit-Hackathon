@@ -54,5 +54,5 @@ def downloadResult(jobId, outFilePath):
     open(outFilePath, 'wb').write(result.content)
 
 
-jobId = postJob(sys.argv[1])
-downloadResult(jobId, sys.argv[2])
+# jobId = postJob(sys.argv[1])
+# downloadResult(jobId, sys.argv[2])
