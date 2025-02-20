@@ -1,6 +1,0 @@
-Answer based on the following:
-basaltic plains similar to the Moon.[93] It is likely that Mercury has a silicate crust and a large iron core.[94][95] Mercury has a very tenuous atmosphere, consisting of solar-wind particles and ejected atoms.[96] Mercury has no natural satellites.[97]
-Venus (0.72–0.73 AU)[D 6] has a reflective, whitish atmosphere that is mainly composed of carbon dioxide. At the surface, the atmospheric pressure is ninety times as dense as on Earth's sea level.[98] Venus has a surface temperatures over 400 °C (752 °F), mainly due to the amount of greenhouse gases in the atmosphere.[99] The planet lacks a protective magnetic field to protect against stripping by the solar wind, which suggests that its atmosphere is sustained by volcanic activity.[100] Its
-Mercury (0.31–0.59 AU from the Sun)[D 6] is the smallest planet in the Solar System. Its surface is grayish, with an expansive rupes (cliff) system generated from thrust faults and bright ray systems formed by impact event remnants.[92] The surface has widely varying temperature, with the equatorial regions ranging from −170 °C (−270 °F) at night to 420 °C (790 °F) during sunlight. In the past, Mercury was volcanically active, producing smooth basaltic plains similar to the Moon.[93] It is
-
-Question: how many planets are in the solar system?

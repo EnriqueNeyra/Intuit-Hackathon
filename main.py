@@ -4,6 +4,8 @@ import requests
 from sentence_transformers import SentenceTransformer
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 import HostedAPI
+import json
+
 
 # Configurations
 DATA_FILE = "solar_system.txt"  # Change this to your text file
@@ -64,22 +66,35 @@ def query_llama3(question):
     relevant_chunks = retrieve_relevant_chunks(question)
     context = "\n".join(relevant_chunks)
 
-    # TODO turn prompt into txt file
-    # payload = {
-    #     "prompt": f"Answer based on the following:\n{context}\n\nQuestion: {question}",
-    #     "temperature": 0.7,
-    #     "max_tokens": 256
-    # }
+    # Construct the payload
+    payload = {
+        "dialog": [
+            {
+                "role": "system",
+                "content": "You are a helpful assistant."
+            },
+            {
+                "role": "user",
+                "content": f"Answer based on the following:\n{context}\n\nQuestion: {question}"
+            }
+        ],
+        "max_gen_len": None,
+        "temperature": 0.7,
+        "top_p": 0.9
+    }
 
-    #response = requests.post(LLAMA3_API_URL, json=payload, headers={"Authorization": f"Bearer {LLAMA3_API_KEY}"})
+    # Write the payload to a JSON file
+    with open("prompt.json", "w") as json_file:
+        json.dump(payload, json_file, indent=4)
 
-    prompt = f"Answer based on the following:\n{context}\n\nQuestion: {question}"
-    file = open("prompt.txt", "w")
-    file.write(prompt)
-    file.close()
+    # Send the JSON file using HostedAPI.postJob
+    response = HostedAPI.postJob('prompt.json')
 
-    response = HostedAPI.postJob('prompt.txt')
-    return response.json().get("text", "Error retrieving response")
+    # Handle the response
+    if response.status_code == 200:
+        return response.json().get("reply_message", "Error retrieving response")
+    else:
+        return f"Request failed with status code {response.status_code}"
 
 
 # Step 6: Run a Query

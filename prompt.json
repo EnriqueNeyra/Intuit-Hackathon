@@ -1,0 +1,15 @@
+{
+    "dialog": [
+        {
+            "role": "system",
+            "content": "You are a helpful assistant."
+        },
+        {
+            "role": "user",
+            "content": "Answer based on the following:\nBecause the Sun fuses hydrogen at its core, it is a main-sequence star. More specifically, it is a G2-type main-sequence star, where the type designation refers to its effective temperature. Hotter main-sequence stars are more luminous but shorter lived. The Sun's temperature is intermediate between that of the hottest stars and that of the coolest stars. Stars brighter and hotter than the Sun are rare, whereas substantially dimmer and cooler stars, known as red dwarfs, make up about 75% of the\nknown as red dwarfs, make up about 75% of the fusor stars in the Milky Way.[80]\nWhite ball of plasma\nThe Sun in true white color\nThe Sun is the Solar System's star and by far its most massive component. Its large mass (332,900 Earth masses),[75] which comprises 99.86% of all the mass in the Solar System,[76] produces temperatures and densities in its core high enough to sustain nuclear fusion of hydrogen into helium.[77] This releases an enormous amount of energy, mostly radiated into space as electromagnetic radiation peaking in visible light.[78][79]\n\nQuestion: what is a solar system?"
+        }
+    ],
+    "max_gen_len": null,
+    "temperature": 0.7,
+    "top_p": 0.9
+}
