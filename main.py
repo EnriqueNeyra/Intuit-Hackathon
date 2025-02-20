@@ -39,16 +39,24 @@ def retrieve_relevant_chunks(query, top_k=3):
 
     query_string = """
     MATCH (c:Chunk)
-    WITH c, 
-         gds.similarity.cosine(c.embedding, $query_embedding) AS score
+    WITH c, $query_embedding AS query_embedding, c.embedding AS embedding
+    // Compute the dot product between the two vectors
+    WITH c, query_embedding, embedding,
+         reduce(dot = 0.0, i IN range(0, size(embedding)) | dot + embedding[i] * query_embedding[i]) AS dot,
+         // Compute the norm of the stored embedding
+         sqrt(reduce(sum = 0.0, i IN embedding | sum + i * i)) AS norm_embedding,
+         // Compute the norm of the query embedding
+         sqrt(reduce(sum = 0.0, i IN query_embedding | sum + i * i)) AS norm_query
+    WITH c, dot/(norm_embedding * norm_query) AS score
     ORDER BY score DESC
     LIMIT $top_k
-    RETURN c.text
+    RETURN c.text AS chunk_text
     """
 
     with driver.session() as session:
         results = session.run(query_string, query_embedding=query_embedding, top_k=top_k)
-        return [record["c.text"] for record in results]
+        return [record["chunk_text"] for record in results]
+
 
 
 # Step 5: Function to Call LLama3
